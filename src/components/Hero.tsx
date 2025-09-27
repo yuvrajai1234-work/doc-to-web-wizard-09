@@ -24,7 +24,7 @@ export const Hero = () => {
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
         <div className="glass rounded-3xl p-12 shadow-card">
           <h1 className="text-6xl md:text-8xl font-bold mb-6 gradient-hero bg-clip-text text-transparent">
-            HabitFlow
+            DailyDots
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
