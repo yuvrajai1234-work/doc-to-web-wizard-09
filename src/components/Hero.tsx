@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Target, TrendingUp, Users, Zap } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import heroImage from "@/assets/hero-image.jpg";
 
 export const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
@@ -33,10 +36,10 @@ export const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+            <Button variant="hero" size="lg" className="text-lg px-8 py-4" onClick={() => navigate("/auth")}>
               Start Your Journey <ArrowRight className="ml-2" />
             </Button>
-            <Button variant="glass" size="lg" className="text-lg px-8 py-4">
+            <Button variant="glass" size="lg" className="text-lg px-8 py-4" onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}>
               Watch Demo
             </Button>
           </div>
